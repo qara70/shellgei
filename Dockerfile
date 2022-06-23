@@ -4,7 +4,8 @@ RUN apt-get update && \
   apt-get install -y git && \
   apt-get install -y gawk && \
   apt-get install -y wget && \
-  apt-get install -y curl
+  apt-get install -y curl && \
+  apt-get install -y vim
 
 RUN git clone https://github.com/shellgei/shellgei160.git
 
