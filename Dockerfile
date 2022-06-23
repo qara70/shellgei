@@ -1,11 +1,11 @@
-FROM alpine
+FROM ubuntu:20.04
 WORKDIR /work
-RUN apk update && \
-  apk add git && \
-  apk add gawk && \
-  apk add wget && \
-  apk add curl
+RUN apt-get update && \
+  apt-get install -y git && \
+  apt-get install -y gawk && \
+  apt-get install -y wget && \
+  apt-get install -y curl
 
 RUN git clone https://github.com/shellgei/shellgei160.git
 
-RUN /bin/sh
+RUN /bin/bash
